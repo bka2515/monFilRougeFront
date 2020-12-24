@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+body{
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.academysonatel.com%2Fwp-content%2Fuploads%2F2019%2F07%2Fgrad-min-1200x480.jpg&imgrefurl=https%3A%2F%2Fwww.academysonatel.com%2Findex.php%2F2019%2F07%2F18%2Fhello-world%2F&tbnid=8x_3139CP79FNM&vet=12ahUKEwjI67jltLztAhWItKQKHfJdB_UQMyghegUIARDWAQ..i&docid=9PsgJ6O4VYgj7M&w=1200&h=480&q=sonatel%20academy&ved=2ahUKEwjI67jltLztAhWItKQKHfJdB_UQMyghegUIARDWAQ");
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+div.container{
+    margin: 0px 100px;
+}
+.fill.remaining-space{
+flex: 1 1 auto;
+}

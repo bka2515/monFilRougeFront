@@ -1,0 +1,36 @@
+<div class="container">  
+  <h1>User details using dailog box in angular</h1>  
+  <hr>  
+      <table mat-table  class="mat-elevation-z8">  
+          <ng-container matColumnDef="UserId">  
+              <th style="width: 100px;" mat-header-cell *matHeaderCellDef> User Id </th>  
+              <td mat-cell *matCellDef="let element"> {{element.UserId}} </td>  
+          </ng-container>  
+          <!-- User Name Column -->  
+          <ng-container matColumnDef="UserName">  
+              <th style="width: 150px;" mat-header-cell *matHeaderCellDef> User Name </th>  
+              <td mat-cell *matCellDef="let element"> {{element.UserName}} </td>  
+          </ng-container>  
+          <!-- EmailId Column -->  
+          <ng-container matColumnDef="EmailId">  
+              <th style="width: 150px;" mat-header-cell *matHeaderCellDef> EmailId </th>  
+              <td mat-cell *matCellDef="let element"> {{element.EmailId}} </td>  
+          </ng-container>  
+          <!-- Mobile Column -->  
+          <ng-container matColumnDef="MobileNo">  
+              <th mat-header-cell *matHeaderCellDef style="width: 200px;"> MobileNo </th>  
+              <td mat-cell *matCellDef="let element"> {{element.MobileNo}} </td>  
+          </ng-container>  
+          <ng-container matColumnDef="Action" >  
+              <th mat-header-cell *matHeaderCellDef> Action </th>  
+              <td mat-cell *matCellDef="let element">  
+                  <button (click)="openDialog(element)" mat-raised-button class="btn btn-primary">  
+                      <span>Detail</span>  
+                  </button>  
+              </td>  
+          </ng-container>  
+          <tr mat-header-row   
+style="background-color:darkblue;"></tr>  
+          <tr mat-row *matRowDef=""></tr>  
+      </table>  
+  </div>

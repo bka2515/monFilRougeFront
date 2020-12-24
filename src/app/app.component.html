@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-info bb"> 
+  
+  <h1>{{title}}</h1>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="navbar-brand" routerLink="" >Home</button>
+      <button class="navbar-brand" routerLink="/connexion" >Connexion</button>
+      <button class="navbar-brand" routerLink="/profils" >profils</button>
+      <button class="navbar-brand" routerLink="/register" >inscription</button>
+      <button class="navbar-brand" routerLink="/users" >utilsateurs</button>
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div [style.background-image]="'url(assets/images/moimage.jpeg)'">
+  <router-outlet></router-outlet>
+</div>
+
+ <!-- <img src="../assets/images/moncap.png" class="img-fluid" alt=""> -->
+ 
+ <!-- <router-outlet></router-outlet> -->
+  <!-- <app-login></app-login> -->
+<!-- <app-resistor></app-resistor> -->
+
+
+
+  
